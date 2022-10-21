@@ -1,0 +1,38 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container-1" >
+        <h1>sifra de cesar</h1>
+        <img id="cesar" sfc="">
+    </div>
+
+    <select name="cifras" id="cifras">
+        <option value="Base64">Base64</option>
+        <option value="Cifra de Cesar">Cesar</option>
+    </select>
+
+    <div id="container-2" >
+        <label><textarea type='text' id="plainInput-1" placeholder="type in plain text"></textarea></label>
+        <button id="encrypt-btn">Codificar Mensagem!</button>
+        <input type="nuber" id="shiftInput" min="0" max="25">
+            <br>
+        <label>
+            <textarea type="text" id="encryptedInput-1" placeholder="Encrypted text will appear here..." ></textarea>
+        </label>
+        <div>
+            <input type="radio" name="casionooo" id="fake" value="C" checked onclick="msgCod()">
+            <label for="C">Codificar</label>
+            <input type="radio" name="casionooo" id="lua" value="D" onclick="msgDecod()">
+            <label for="D">Decodificar</label>
+        </div>
+    </div>
+    <script src="ceasar.js"></script>
+</body>
+</html>
